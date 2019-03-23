@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <h1>SnipTag</h1>
     <div id="nav">
       <router-link to="/">Filter</router-link>&nbsp;|
       <router-link to="/add">Add</router-link>
