@@ -86,5 +86,149 @@ export const libs = [
     description: "",
     url: "https://daneden.github.io/animate.css/",
     tags: ["css", "animate"]
+  },
+  {
+    id: 9,
+    name: "understanding service workers and caching strategies",
+    short_description: "",
+    description: "",
+    url:
+      "https://blog.bitsrc.io/understanding-service-workers-and-caching-strategies-a6c1e1cbde03",
+    tags: ["service worker", "offline", "javascript", "cache"]
+  },
+  {
+    id: 10,
+    name: "how to get started with react hooks and controller forms",
+    short_description: "",
+    description: "",
+    url:
+      "https://medium.freecodecamp.org/how-to-get-started-with-react-hooks-controlled-forms-826c99943b92",
+    tags: ["forms", "controlled forms", "react", "javascript", "hooks"]
+  },
+  {
+    id: 11,
+    name: "lets explore kubernetes",
+    short_description: "",
+    description: "",
+    url: "https://medium.com/@thisiskj/lets-explore-kubernetes-5477244ef323",
+    tags: [
+      "kubernetes",
+      "dev ops",
+      "gitlab",
+      "cd",
+      "ci",
+      "continous integration"
+    ]
+  },
+  {
+    id: 12,
+    name: "react suspense with graphql",
+    short_description: "",
+    description: "",
+    url:
+      "https://medium.com/open-graphql/react-suspense-with-graphql-d95cdef46bfe",
+    tags: [
+      "react",
+      "suspense",
+      "graphql",
+      "javascript",
+      "static",
+      "static sites"
+    ]
+  },
+  {
+    id: 13,
+    name: "css scroll snap",
+    short_description: "",
+    description: "",
+    url:
+      "https://blog.usejournal.com/css-scroll-snap-how-it-really-works-94d99db80bc9",
+    tags: ["css", "scroll"]
+  },
+  {
+    id: 14,
+    name: "noobs guid to cd/ci",
+    short_description: "",
+    description: "",
+    url:
+      "https://medium.com/@brenn.a.hill/noobs-guide-continuous-integration-continuous-delivery-continuous-deployment-d26ac4f2beeb",
+    tags: ["ci", "cd", "newbie", "continous integration", "continous delivery"]
+  },
+  {
+    id: 15,
+    name: "design for developers",
+    short_description: "",
+    description: "",
+    url: "https://frontendmasters.com/courses/design-for-developers/",
+    tags: ["frontendmasters", "developers", "design", "course"]
+  },
+  {
+    id: 16,
+    name: "form validation with react hooks",
+    short_description: "",
+    description: "",
+    url: "https://itnext.io/form-validation-with-react-hooks-ab0dbba23b9f",
+    tags: ["forms", "validation", "react", "hooks"]
+  },
+  {
+    id: 17,
+    name: "use enough docker to be usefull",
+    short_description: "",
+    description: "",
+    url:
+      "https://towardsdatascience.com/learn-enough-docker-to-be-useful-b0b44222eef5",
+    tags: ["docker"]
+  },
+  {
+    id: 18,
+    name: "lazy load and suspense",
+    short_description: "",
+    description: "",
+    url:
+      "https://blog.bitsrc.io/lazy-loading-react-components-with-react-lazy-and-suspense-f05c4cfde10c",
+    tags: ["javascript", "suspense", "react", "lazy", "lazy load"]
+  },
+  {
+    id: 19,
+    name: "testing in react with jest and enzyme",
+    short_description: "",
+    description: "",
+    url:
+      "https://medium.com/@rossbulat/testing-in-react-with-jest-and-enzyme-an-introduction-99ce047dfcf8",
+    tags: ["javascript", "test", "testing", "jest", "enzyme"]
+  },
+  {
+    id: 20,
+    name: "getting feedback",
+    short_description: "",
+    description: "",
+    url:
+      "https://uxdesign.cc/guidelines-for-constructive-and-empowering-design-feedback-and-critique-5a2a5c460dc1",
+    tags: ["clients", "feedback"]
+  },
+  {
+    id: 21,
+    name: "understanding cors",
+    short_description: "",
+    description: "",
+    url: "https://medium.com/@akshaysin_86681/understanding-cors-93ddf18d32d6",
+    tags: ["cors"]
+  },
+  {
+    id: 22,
+    name: "introduction to graphql",
+    short_description: "",
+    description: "",
+    url:
+      "https://medium.freecodecamp.org/an-introduction-to-graphql-how-it-works-and-how-to-use-it-91162ecd72d0",
+    tags: ["graphql", "newbie"]
+  },
+  {
+    id: 23,
+    name: "rest security basics",
+    short_description: "",
+    description: "",
+    url: "https://medium.com/@yellow/rest-security-basics-f59013850c4e",
+    tags: ["security", "rest"]
   }
 ];
