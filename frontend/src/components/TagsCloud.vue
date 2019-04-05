@@ -1,5 +1,6 @@
 <template>
   <div class="tags-cloud">
+    <button v-on:click="clickMe">Click me!</button>
     <Tag v-for="tag in tags" :key="tag.id" :data="tag"/>
   </div>
 </template>
@@ -17,6 +18,11 @@ export default {
       { id: 3, name: "dev ops", label: "dev_ops" }
     ]
   }),
+  methods: {
+    clickMe() {
+      console.log("clicking me!");
+    }
+  },
   components: {
     Tag
   },
