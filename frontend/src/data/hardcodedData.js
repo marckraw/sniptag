@@ -230,5 +230,13 @@ export const libs = [
     description: "",
     url: "https://medium.com/@yellow/rest-security-basics-f59013850c4e",
     tags: ["security", "rest"]
+  },
+  {
+    id: 24,
+    name: "vue transitions",
+    short_description: "",
+    description: "",
+    url: "https://jsfiddle.net/chrisvfritz/65gLu2b6/",
+    tags: ["vue", "javascript", "transitions", "animation"]
   }
 ];
