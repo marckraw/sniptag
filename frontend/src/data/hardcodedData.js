@@ -238,5 +238,41 @@ export const libs = [
     description: "",
     url: "https://jsfiddle.net/chrisvfritz/65gLu2b6/",
     tags: ["vue", "javascript", "transitions", "animation"]
+  },
+  {
+    id: 25,
+    name: "12 JavaScript Tricks You Won’t Find in Most Tutorials",
+    short_description:
+      "Useful tips for writing more concise and performant JavaScript",
+    description: "",
+    url:
+      "https://medium.com/@bretcameron/12-javascript-tricks-you-wont-find-in-most-tutorials-a9c9331f169d",
+    tags: ["javascript"]
+  },
+  {
+    id: 26,
+    name: "building some search with react hooks",
+    short_description: "",
+    description: "",
+    url:
+      "https://medium.freecodecamp.org/how-to-build-a-movie-search-app-using-react-hooks-24eb72ddfaf7",
+    tags: ["javascript", "hooks", "react hooks"]
+  },
+  {
+    id: 27,
+    name: "how to build great app - app architecture",
+    short_description: "",
+    description: "",
+    url:
+      "https://medium.freecodecamp.org/how-to-build-a-rock-solid-app-29dffe7875d2",
+    tags: ["app architecture", "architecture"]
+  },
+  {
+    id: 28,
+    name: "introduction to graphql",
+    short_description: "",
+    description: "",
+    url: "https://hackernoon.com/an-introduction-to-graphql-2c3f7d8fb4e0",
+    tags: ["graphql"]
   }
 ];
