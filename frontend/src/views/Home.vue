@@ -1,8 +1,8 @@
 <template>
   <div class="home">
-    <Header title="whatever" :description="description"/>
-    <TagsCloud/>
-    <FilteredResults/>
+    <Header title="whatever" :description="description" />
+    <TagsCloud />
+    <FilteredResults />
     <div>
       <h1></h1>
     </div>
@@ -20,7 +20,7 @@ import FilteredResults from "@/components/FilteredResults.vue";
 import Header from "@/components/Header.vue";
 
 export default {
-  name: "home",
+  name: "Home",
   data() {
     return {
       show: false,
