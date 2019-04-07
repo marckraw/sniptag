@@ -1,7 +1,7 @@
 <template>
   <div class="tags-cloud">
     <button v-on:click="clickMe">Click me!</button>
-    <Tag v-for="tag in tags" :key="tag.id" :data="tag"/>
+    <Tag v-for="tag in tags" :key="tag.id" :data="tag" />
   </div>
 </template>
 
@@ -37,5 +37,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>

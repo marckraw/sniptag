@@ -3,6 +3,9 @@
     <Header title="whatever" :description="description"/>
     <TagsCloud/>
     <FilteredResults/>
+    <div>
+      <h1></h1>
+    </div>
 
     <transition name="fade">
       <h1 v-if="show">Animated</h1>

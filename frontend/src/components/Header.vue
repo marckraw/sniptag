@@ -1,9 +1,10 @@
 <template>
   <div class="header">
-    <h2>{{title}}</h2>
-    <p>{{description}}</p>
+    <h2>{{ title }}</h2>
+    <p>{{ description }}</p>
   </div>
 </template>
+
 <script>
 // import TagsCloud from "@/components/TagsCloud.vue";
 // import FilteredResults from "@/components/FilteredResults.vue";
@@ -20,5 +21,3 @@ export default {
   // }
 };
 </script>
-
-

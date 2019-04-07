@@ -3,11 +3,11 @@
     <h1>This is an adding page</h1>
     <div>
       <label for="title">Title</label>
-      <input name="title" id="title" type="text" v-model="title">
+      <input name="title" id="title" type="text" v-model="title" />
     </div>
     <div>
       <label for="url">Url</label>
-      <input name="url" id="url" type="text" v-model="url">
+      <input name="url" id="url" type="text" v-model="url" />
     </div>
     <div>
       <label for="short_description">Short description</label>
@@ -20,12 +20,19 @@
     </div>
     <div>
       <label for="description">Description</label>
-      <textarea name="description" id="description" type="text" v-model="description"/>
+      <textarea
+        name="description"
+        id="description"
+        type="text"
+        v-model="description"
+      />
     </div>
     <div>
       <label for="tags">Tags</label>
       <select name="tags" id="tags">
-        <option value="that_should_be_multiselect">that_should_be_multiselect</option>
+        <option value="that_should_be_multiselect"
+          >that_should_be_multiselect</option
+        >
         <option value="javascript">javascript</option>
         <option value="css">css</option>
         <option value="html">html</option>
@@ -55,4 +62,3 @@ export default {
   // }
 };
 </script>
-

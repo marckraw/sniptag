@@ -6,7 +6,7 @@
       <router-link to="/add">Add</router-link>
     </div>
     <transition name="fade">
-      <router-view/>
+      <router-view />
     </transition>
   </div>
 </template>
@@ -23,4 +23,3 @@
   transform: translateX(100%);
 }
 </style>
-
