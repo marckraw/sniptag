@@ -1,17 +1,17 @@
 <template>
-  <div class="home">
-    <Header title="whatever" :description="description" />
-    <TagsCloud />
-    <FilteredResults />
-    <div>
-      <h1></h1>
-    </div>
+    <div class="home">
+        <Header title="whatever" :description="description" />
+        <TagsCloud />
+        <FilteredResults />
+        <div>
+            <h1></h1>
+        </div>
 
-    <transition name="fade">
-      <h1 v-if="show">Animated</h1>
-    </transition>
-    <button @click="show = !show">shoow/hide</button>
-  </div>
+        <transition name="fade">
+            <h1 v-if="show">Animated</h1>
+        </transition>
+        <button @click="show = !show">shoow/hide</button>
+    </div>
 </template>
 
 <script>
@@ -20,28 +20,28 @@ import FilteredResults from "@/components/FilteredResults.vue";
 import Header from "@/components/Header.vue";
 
 export default {
-  name: "Home",
-  data() {
-    return {
-      show: false,
-      title: "some title",
-      description: "asdlsjkdnfkjsadnfglksdjnlfkjndslk"
-    };
-  },
-  beforeCreate() {
-    console.log("beforeCreate lifecycle hook");
-  },
-  components: {
-    TagsCloud,
-    FilteredResults,
-    Header
-  }
+    name: "Home",
+    data() {
+        return {
+            show: false,
+            title: "some title",
+            description: "asdlsjkdnfkjsadnfglksdjnlfkjndslk"
+        };
+    },
+    beforeCreate() {
+        console.log("beforeCreate lifecycle hook");
+    },
+    components: {
+        TagsCloud,
+        FilteredResults,
+        Header
+    }
 };
 </script>
 
 <style lang="scss" scoped>
 h1 {
-  margin: 0;
+    margin: 0;
 }
 /* .fade-enter-active,
 .fade-leave-active {
