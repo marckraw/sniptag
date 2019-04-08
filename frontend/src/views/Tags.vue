@@ -10,19 +10,10 @@ export default {
     name: "Tags",
     data() {
         return {
-            tags: [
-                "javascript",
-                "react",
-                "css",
-                "dupa",
-                "hooks",
-                "asdasd",
-                "kubernetes"
-            ]
+            tags: ["javascript", "react", "css"]
         };
     },
     mounted() {
-        console.log("im mounted");
         this.fetchTags();
     },
     methods: {
@@ -46,8 +37,15 @@ export default {
 <style lang="scss" scoped>
 .tags {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
+
+    @media (min-width: 600px) and (max-width: 899px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media (min-width: 900px) {
+        grid-template-columns: repeat(6, 1fr);
+    }
 }
 
 .tags__item {

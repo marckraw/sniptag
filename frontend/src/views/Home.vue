@@ -1,40 +1,50 @@
 <template>
     <div class="home">
-        <Header title="whatever" :description="description" />
-        <TagsCloud />
+        <TagsCloud :data="tags" />
         <FilteredResults />
-        <div>
-            <h1></h1>
-        </div>
-
-        <transition name="fade">
-            <h1 v-if="show">Animated</h1>
-        </transition>
-        <button @click="show = !show">shoow/hide</button>
     </div>
 </template>
 
 <script>
 import TagsCloud from "@/components/TagsCloud.vue";
 import FilteredResults from "@/components/FilteredResults.vue";
-import Header from "@/components/Header.vue";
+
+import { data } from "../data/hardcodedData";
 
 export default {
     name: "Home",
     data() {
         return {
+            data: {},
+            tags: [],
             show: false,
             title: "some title",
             description: "asdlsjkdnfkjsadnfglksdjnlfkjndslk"
         };
     },
-    beforeCreate() {
-        console.log("beforeCreate lifecycle hook");
+    mounted() {
+        console.log("Home mounted");
+        // this.data = this.fetchData();
+        // this.tags = this.getAllTags();
+    },
+    methods: {
+        fetchData() {
+            const fetchedData = data;
+            return fetchedData;
+        },
+        getAllTags() {
+            const tags = data
+                .map(resource => resource.tags)
+                .reduce((prevVal, curr) => [...prevVal, ...curr], []);
+            const set = new Set(tags);
+            const uniqueTags = Array.from(set);
+
+            return uniqueTags;
+        }
     },
     components: {
         TagsCloud,
-        FilteredResults,
-        Header
+        FilteredResults
     }
 };
 </script>

@@ -287,6 +287,6 @@ export const data = [
         short_description: "",
         description: "",
         url: "https://hackernoon.com/an-introduction-to-graphql-2c3f7d8fb4e0",
-        tags: ["graphql"]
+        tags: ["graphql", "dupa"]
     }
 ];

@@ -3,8 +3,8 @@
         <h1>SnipTag</h1>
         <div id="nav">
             <router-link to="/">Filter</router-link> |
-            <router-link to="/add">Add</router-link> |
-            <router-link to="/tags">Tags</router-link>
+            <router-link to="/add">Add rsrc</router-link> |
+            <router-link to="/tags">Tags (edit/add/del)</router-link>
         </div>
         <transition name="fade">
             <router-view />

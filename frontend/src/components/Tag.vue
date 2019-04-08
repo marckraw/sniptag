@@ -5,7 +5,7 @@
 
         <!-- Customization element for the checkbox -->
         <span class="tag-toggle">
-            {{ data.name }}
+            {{ data }}
             <span class="tag-toggle__circle"></span>
         </span>
     </label>
@@ -16,9 +16,12 @@ export default {
     name: "tag",
     props: {
         data: {
-            type: Object,
+            type: String,
             required: true
         }
+    },
+    mounted() {
+        console.log("Tag is Mounted");
     }
 };
 </script>

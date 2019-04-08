@@ -28,22 +28,22 @@
             />
         </div>
         <div>
-            <label for="tags">Tags</label>
-            <select name="tags" id="tags">
-                <option value="that_should_be_multiselect"
-                    >that_should_be_multiselect</option
-                >
-                <option value="javascript">javascript</option>
-                <option value="css">css</option>
-                <option value="html">html</option>
-            </select>
+            <label for="tags">Multiselect Tags</label>
+            <multiselect
+                v-model="formData.tags.value"
+                :options="formData.tags.options"
+                :multiple="true"
+            ></multiselect>
+        </div>
+        <div>
+            <button @click="submit">Add</button>
         </div>
     </div>
 </template>
 <script>
-// @ is an alias to /src
-// import TagsCloud from "@/components/TagsCloud.vue";
-// import FilteredResults from "@/components/FilteredResults.vue";
+import Multiselect from "vue-multiselect";
+
+import { data } from "../data/hardcodedData";
 
 export default {
     name: "add",
@@ -54,12 +54,39 @@ export default {
                 "https://medium.com/@thisiskj/lets-explore-kubernetes-5477244ef323",
             short_description: "something about kubernetes",
             description: "something about kubernetes",
-            tags: ["kubernetes", "javascript"]
+            tags: ["kubernetes", "javascript"],
+            formData: {
+                tags: {
+                    value: null,
+                    options: ["javascript", "css", "html"]
+                }
+            }
         };
+    },
+    mounted() {
+        this.fetchTags();
+    },
+    methods: {
+        getAllTags() {
+            const tags = data
+                .map(resource => resource.tags)
+                .reduce((prevVal, curr) => [...prevVal, ...curr], []);
+            const set = new Set(tags);
+            const uniqueTags = Array.from(set);
+
+            return uniqueTags;
+        },
+        fetchTags() {
+            const tags = this.getAllTags();
+            this.formData.tags.options = tags;
+            console.log("fetching tagss");
+        },
+        submit() {
+            console.log("submitting...");
+        }
+    },
+    components: {
+        Multiselect
     }
-    // components: {
-    //   TagsCloud,
-    //   FilteredResults
-    // }
 };
 </script>
